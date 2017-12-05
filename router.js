@@ -6,7 +6,7 @@ import Navs from './components/navsContainer';
 const RouteConfig = (
     <Router history={hashHistory}>
         <Route path="/" component={Home}>
-            <IndexRoute component={Home}/>
+            <IndexRoute component={Navs}/>
             <Route path="nsc" component={Navs}/>
             <Redirect from='*' to='/'  />
         </Route>
