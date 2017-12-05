@@ -8,12 +8,18 @@ import thunk from 'redux-thunk';
 import * as reducers from './reducer.js';
 
 
+
+// Logger Middleware
+import {createLogger} from 'redux-logger';
+const logger = createLogger();
+ 
 /**
- * Logger Middleware
- * import {createLogger} from 'redux-logger';
- * const logger = createLogger();
+ * redux middleware debug
  */
 
+const yyx_middleware_debug = function(){
+  return null;
+}
 
  /**
   * combine application Reducers to a Big Reducer
@@ -22,7 +28,7 @@ import * as reducers from './reducer.js';
 
 var store = createStore(
     combineReducers(reducers),
-    compose(applyMiddleware(thunk))
+    compose(applyMiddleware(thunk,logger))
     
 );
 

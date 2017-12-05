@@ -3,7 +3,9 @@ export const clickData = (state = {}, action = {}) => {
         case 'CLICK_SUCCESS':
             return Object.assign({},state,action);
         case 'CLICK_START':
-            return state;            
+            return state;   
+        case '@@redux/INIT':
+            return {INIT:'@@redux/INIT'};         
         default:
             return state;
     }
