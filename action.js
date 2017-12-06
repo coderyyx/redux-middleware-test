@@ -5,10 +5,10 @@ export const click = (params) =>{
             path : 'loading'
           });
         
-        setTimeout(()=>dispatch({
-            type : 'CLICK_SUCCESS',
-            path : 'loaded',
-            data : 'receive_data'
-          }),10000)
+        // setTimeout(()=>dispatch({
+        //     type : 'CLICK_SUCCESS',
+        //     path : 'loaded',
+        //     data : 'receive_data'
+        //   }),10000)
     }
 }
