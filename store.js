@@ -29,7 +29,7 @@ const logger = createLogger();
 
 var store = createStore(
     combineReducers(reducers),
-    compose(applyMiddleware(yyx_middleware_debug_1,yyx_middleware_debug_2))
+    compose(applyMiddleware(thunk,yyx_middleware_debug_1,yyx_middleware_debug_2))
     
 );
 

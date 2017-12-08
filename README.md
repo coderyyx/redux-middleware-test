@@ -48,7 +48,7 @@
 +                                                    +
 + compose(chain)(sotre.dispatch)生成的**dispatch**    +
 + 是增强后的dispatch，每次的action调用会经过一系列的中间件  +
-+                                                    +
++  chain中的最后一个中间件传入的是原生的dispatch          +
 +                                                    +
 +                                                    +
 +                                                    +
